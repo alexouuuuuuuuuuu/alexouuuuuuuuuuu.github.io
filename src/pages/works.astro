@@ -1,0 +1,31 @@
+---
+import BasicLayout from "../layouts/BasicLayout.astro";
+import { getCollection } from 'astro:content';
+
+const mesPizza = {
+  titre: "hello pizza",
+  description: "pizza is good for health",
+};
+
+const works = await getCollection("works");
+// import works from "../content/data/works.json";
+---
+
+<BasicLayout>
+  <h1>{mesPizza.titre}</h1>
+  <p>{mesPizza.description}</p>
+
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+    {
+      works.map(({data}) => (
+        <div class="rounded-lg bg-gray-100 p-4 shadow-lg">
+          <h2 class="text-xl font-bold">{data.workName}</h2>
+          {data.competences.map((c) => (
+            <p>{c}</p>
+          ))}
+          <img src={data.photo} alt=""/>
+        </div>
+      ))
+    }
+  </div>
+</BasicLayout>
