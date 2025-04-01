@@ -22,7 +22,6 @@ const tags = [...new Set(allposts.map((post) => post.data.tags).flat())];
 
 		<h1 class="text-4xl font-bold text-yellow-400 pb-10">Mes différents travaux</h1>
 
-		<ul>{tags.map((tag) => <li>{tag}</li>)}</ul>
 
 		<ul class="flex flex-wrap justify-center gap-4 mb-8">
 			<li>
