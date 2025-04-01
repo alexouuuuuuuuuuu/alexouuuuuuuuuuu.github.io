@@ -1,0 +1,39 @@
+<section class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
+        <!-- Logo et texte -->
+        <div class="flex flex-col items-start">
+            <div class="text-2xl font-bold">Mon Logo</div>
+            <p class="mt-2">Restons connectés</p>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <div class="flex flex-col items-start">
+            <h3 class="text-xl font-semibold mb-4">Envie de m'embaucher ?</h3>
+            <form class="space-y-4 w-full max-w-sm">
+                <div>
+                    <label for="name" class="block text-sm font-medium">Nom</label>
+                    <input type="text" id="name" name="name" required class="w-full mt-1 p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium">E-mail</label>
+                    <input type="email" id="email" name="email" required class="w-full mt-1 p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium">Message</label>
+                    <textarea id="message" name="message" required rows="4" class="w-full mt-1 p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 rounded cursor-pointer">Envoyer</button>
+            </form>
+        </div>
+
+        <!-- Liens -->
+        <div class="flex flex-col items-start">
+            <h3 class="text-xl font-semibold mb-4">Où allez-vous ?</h3>
+            <ul class="space-y-2">
+                <li><a href="/about" class="hover:underline">À propos</a></li>
+                <li><a href="/blog" class="hover:underline">Blog</a></li>
+                <li><a href="/contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</section>

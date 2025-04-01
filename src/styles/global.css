@@ -19,3 +19,22 @@
         @apply bg-primary text-white
     }
 }
+
+
+body{
+    background-color: #1a202c;
+}
+
+.prose{
+    *{
+        @apply text-white
+    }
+
+    h1, h2, h3{
+        @apply text-yellow-400 font-bold
+    }
+
+    img{
+        @apply w-100 h-100  
+    }
+}

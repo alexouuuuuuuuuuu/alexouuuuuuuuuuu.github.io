@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import BasicLayout from "../layouts/BasicLayout.astro";
 
+import Footer1 from '../components/Footer1.astro';
 import Footer from '../components/Footer.astro';
 
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
@@ -15,7 +16,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<BasicLayout>
 			<main class="max-w-4xl mx-auto p-6 space-y-6 mb-12">
-				<h1 class="text-4xl font-bold text-center text-white">Bienvenue sur mon portfolio !</h1>
+				<h1 class="text-4xl font-bold text-center text-yellow-400">Bienvenue sur mon portfolio !</h1>
 				<p class="text-lg text-white">
 					Bonjour, je m'appelle Alexis Maugain et je suis en 2ème année de BUT MMI. Je suis spécialisé
 					dans la création numérique, et ce portfolio est une vitrine de mes compétences, de mes projets
@@ -39,6 +40,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					Merci de visiter mon portfolio, et n'hésitez pas à partager vos impressions !
 				</p>
 			</main>
+			<Footer1 />
 			<Footer />
 
 		
