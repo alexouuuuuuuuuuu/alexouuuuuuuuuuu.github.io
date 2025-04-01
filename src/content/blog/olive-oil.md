@@ -1,9 +1,11 @@
 ---
-title: 'projet Olive Oil'
-description: 'Un projet de design et storytelling autour d une marque fictive d huile d olive de luxe'
-pubDate: 'Oct 10 2023'
+title: 'Olive Oil'
+description: 'Identité graphique d une marque fictive d huile d olive de luxe'
+pubDate: 'Oct 10 2024'
 heroImage: '/olive-oil.PNG'
 auteur: 'Alexis Maugain'
+tags: ['web-design']
+
 ---
 
 

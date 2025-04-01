@@ -3,6 +3,7 @@ title: 'Daniel Wellington'
 description: 'Refaire le tunnel d’achat et à recréer le site web.'
 pubDate: 'Jun 19 2024'
 heroImage: '/daniel-wellington.PNG'
+tags: ['web-design']
 ---
 
 Dans ce projet, l’objectif était de transformer l’expérience utilisateur et d’améliorer les performances du site e-commerce de Daniel Wellington en modernisant le tunnel d’achat et en reconstruisant le site avec WordPress.

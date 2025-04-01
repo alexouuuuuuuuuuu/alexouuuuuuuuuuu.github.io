@@ -3,13 +3,55 @@ import BasicLayout from '../../layouts/BasicLayout.astro';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
+
+const allposts = await getCollection('blog');
+
+
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+
+
+const tags = [...new Set(allposts.map((post) => post.data.tags).flat())];
+
+
 ---
 
 <BasicLayout>
-	<section class="flex justify-center py-8 bg-gray-100">
+	<section class="flex flex-col justify-center items-center py-8">
+
+		<h1 class="text-4xl font-bold text-yellow-500 pb-10">Mes différents travaux</h1>
+
+		<ul>{tags.map((tag) => <li>{tag}</li>)}</ul>
+
+		<ul class="flex flex-wrap justify-center gap-4 mb-8">
+			<li>
+				<a href="#communication" class="px-4 py-2 bg-yellow-500 text-white rounded-lg shadow-md hover:bg-yellow-600 transition">
+					Communication
+				</a>
+			</li>
+			<li>
+				<a href="#graphisme" class="px-4 py-2 bg-yellow-500 text-white rounded-lg shadow-md hover:bg-yellow-600 transition">
+					Graphisme
+				</a>
+			</li>
+			<li>
+				<a href="#webdesign" class="px-4 py-2 bg-yellow-500 text-white rounded-lg shadow-md hover:bg-yellow-600 transition">
+					Webdesign
+				</a>
+			</li>
+			<li>
+				<a href="#developpement-web" class="px-4 py-2 bg-yellow-500 text-white rounded-lg shadow-md hover:bg-yellow-600 transition">
+					Développement Web
+				</a>
+			</li>
+			<li>
+				<a href="#audiovisuel" class="px-4 py-2 bg-yellow-500 text-white rounded-lg shadow-md hover:bg-yellow-600 transition">
+					Audiovisuel
+				</a>
+			</li>
+		</ul>
+
 		<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full px-4">
 			{
 				posts.map((post) => (

@@ -1,8 +1,10 @@
 ---
 title: 'Glow-Pong'
 description: 'Découvrez notre projet d application fictive Glow-Pong'
-pubDate: 'Jul 15 2022'
+pubDate: 'Jul 15 2024'
 heroImage: '/Glow-Pong.PNG'
+tags: ['web-design']
+
 ---
 
 Glow-Pong est une application fictive que nous avons imaginée pour révolutionner la manière dont les gens interagissent avec les jeux de pong classiques. Notre objectif est de combiner une expérience de jeu immersive avec des fonctionnalités modernes et innovantes.
