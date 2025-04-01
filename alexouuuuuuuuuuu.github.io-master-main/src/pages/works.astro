@@ -1,0 +1,43 @@
+---
+import BasicLayout from "../layouts/BasicLayout.astro";
+import { getCollection } from 'astro:content';
+
+const mesPizza = {
+  titre: "hello pizza",
+  description: "pizza is good for health",
+};
+
+const works = await getCollection("works");
+// import works from "../content/data/works.json";
+---
+
+<BasicLayout>
+  <h1 class="flex my-4 justify-center text-3xl">Mes Travaux</h1>
+  <div class="flex gap-4 my-4 justify-center">
+    <a href="#Graphisme" class="hover:underline">Graphisme</a>
+    <a href="#communication" class="hover:underline">Communication</a>
+    <a href="#webdesign" class="hover:underline">Webdesign</a>
+    <a href="#developpement" class="hover:underline">Développement</a>
+    <a href="#audiovisuel" class="hover:underline">Audiovisuel</a>
+  </div>
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+    {
+      works.map(({data}) => (
+        <div class="relative rounded-lg bg-gray-100 p-4 shadow-lg">
+          <div class="absolute top-2 right-2 text-sm text-gray-500">
+            {data.date}
+          </div>
+          <div class="flex justify-center">
+            <img src={data.photo} alt="" class="max-h-64"/>
+          </div>
+          <h2 class="text-xl font-bold">{data.workName}</h2>
+          <div class="flex flex-wrap gap-2">
+            {data.competences.map((c) => (
+              <div class="bg-gray-200 px-2 py-1 rounded">{c}</div>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</BasicLayout>

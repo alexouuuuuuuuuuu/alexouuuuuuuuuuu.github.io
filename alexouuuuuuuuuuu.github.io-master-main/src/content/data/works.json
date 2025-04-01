@@ -1,0 +1,42 @@
+
+[
+  {
+    "id": 1,
+    "workName": "olive oil",
+    "date": "16/09/2024",
+    "competences": ["ui/ux design", "figma", "wireframing"],
+    "photo": "/olive-oil.PNG"
+
+
+  },
+  {
+    "id": 2,
+    "workName": "cyberpong",
+    "date": "20/12/2024",
+    "competences": ["ui/ux design", "audiovisuel", "wireframing"],
+    "photo": "/Glow-Pong.PNG"
+
+
+  },
+  {
+    "id": 3,
+    "workName": "daniel-wellington",
+    "date": "06/02/2025",
+    "competences": ["ui/ux design", "figma", "wireframing"],
+    "photo": "/daniel-wellington.PNG"
+
+
+  },
+  {
+    "id": 4,
+    "workName": "bbbbb",
+    "date": "16/09/2024",
+    "competences": ["ui/ux design", "figma", "wireframing"],
+    "photo": "olive-oil.PNG"
+
+
+  }
+]
+
+
+
