@@ -23,7 +23,12 @@ Features:
 
 ## 🚀 Project Structure
 
+<<<<<<< HEAD
 Inside of your Astroc project, you'll see the following folders and files:
+=======
+
+Inside of your Astro project, you'll see the following folders and files:
+>>>>>>> c362a6bd8d3ea130f4fd294c29b1a0356763c78b
 
 ```text
 ├── public/
