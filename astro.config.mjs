@@ -9,6 +9,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://alexouuuuuuuuuuu.github.io',
 
+
   integrations: [mdx(), sitemap()],
 
   vite: {
